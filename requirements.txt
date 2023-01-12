@@ -1,0 +1,8 @@
+tensorflow==2.11.0
+tensorflow-gpu==2.10.1
+numpy==1.22.3
+scipy==1.9.3
+opencv-python==4.7.0.68
+jupyter==1.0.0
+matplotlib==3.6.2
+keras==2.11.0
