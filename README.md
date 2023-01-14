@@ -16,7 +16,7 @@
   <li>Clone or download the repository.</li>
   <li>Make sure that you have the required libraries installed.</li>
   <li>Place your dataset in a directory called 'training_data'</li>
-  <li>Open the Jupyter notebook by running the command jupyter notebook in your terminal.</li>
+  <li>Open the Jupyter notebook by running the command "jupyter notebook" in your terminal in the directory.</li>
   <li>Locate and open the training_model.ipynb notebook</li>
 
   <li>Make sure that the kernel for the notebook is set to Python 3.</li>
@@ -40,6 +40,21 @@ training_data/
 </pre>
 </ol>
 
+<h2>Model architecture</h2>
+<p>The model architecture is a convolutional neural network (CNN) with the following layers:</p>
+<ul>
+  <li>Conv2D with 16 filters of size (3,3), stride of 1, and ReLU activation</li>
+  <li>MaxPooling2D</li>
+  <li>Conv2D with 32 filters of size (3,3), stride of 1, and ReLU activation</li>
+  <li>MaxPooling2D</li>
+  <li>Conv2D with 16 filters of size (3,3), stride of 1, and ReLU activation</li>
+  <li>MaxPooling2D</li>
+  <li>Flatten layer</li>
+  <li>Dense layer with 128 units and ReLU activation</li>
+  <li>Dense layer with the number of units equal to the number of classes in the dataset and softmax activation</li>
+</ul>
+<p>You can change the architecture of the model, training parameters, and data set path accordingly.</p>
+
   
 <h2>Files saved after training</h2>
 <p>The script will save the following files in the unique folder created after training:</p>
@@ -61,27 +76,10 @@ training_data/
     <img src="08.01.2023 221335-train_results/loss_chart.jpg" width="30%" style="display:inline-block;">
 </div>
 
-  
-  
-  
-  
-  
+
   
 </ol>
-<h2>Model architecture</h2>
-<p>The model architecture is a convolutional neural network (CNN) with the following layers:</p>
-<ul>
-  <li>Conv2D with 16 filters of size (3,3), stride of 1, and ReLU activation</li>
-  <li>MaxPooling2D</li>
-  <li>Conv2D with 32 filters of size (3,3), stride of 1, and ReLU activation</li>
-  <li>MaxPooling2D</li>
-  <li>Conv2D with 16 filters of size (3,3), stride of 1, and ReLU activation</li>
-  <li>MaxPooling2D</li>
-  <li>Flatten layer</li>
-  <li>Dense layer with 128 units and ReLU activation</li>
-  <li>Dense layer with the number of units equal to the number of classes in the dataset and softmax activation</li>
-</ul>
-<p>You can change the architecture of the model, training parameters, and data set path accordingly.</p>
+
   
   
   
@@ -89,9 +87,7 @@ training_data/
 <ul>
   <li>This script is set to work with images of size 256x256, you can change the image size accordingly.</li>
   <li>The script automatically loads the images and splits them into train, validation, and test sets.</li>
-  <li>You can find an example of a pre-trained model in the model folder, which was trained to classify images as notes and non-notes from WhatsApp images. You can use this pre-trained model as a starting point for fine-tuning on your own dataset or as a reference for comparison to your own model's performance. The model is trained using two classes (notes and non-notes) and the code is available in this repository <a href="https://github.com/sajalkmr/WhatsAppNotesSeparator">WhatsAppNotesSeparator</a>.</li>
-
-<p>Please make sure to place your images in two different folders as class1 and class2 in the training_data folder to be used for training.</p>
+  
 
 </ul>
   
@@ -105,7 +101,11 @@ training_data/
 <p>This project is licensed under the MIT License - see the LICENSE.md file for details.</p>
 
 <h2>References</h2>
-<ul>
-  <li>The code for this project is greatly inspired by <a href="https://github.com/nicknochnack">Nicholas Renotte</a>.</li>
-</ul>
 
+  <p>The code for this project is greatly inspired by <a href="https://github.com/nicknochnack">Nicholas Renotte</a>.</p>
+
+
+
+<h2>Examples</h2>
+<p>You can find an example of a pre-trained model in the model folder, which was trained to classify images as notes and non-notes from WhatsApp images. You can use this pre-trained model as a starting point for fine-tuning on your own dataset or as a reference for comparison to your own model's performance. The model is trained using two classes (notes and non-notes) and the code is available in this repository <a href="https://github.com/sajalkmr/WhatsAppNotesSeparator">WhatsAppNotesSeparator</a>.</p>
+<p>Please make sure to place your images in two different folders as class1 and class2 in the training_data folder to be used for training.</p>
