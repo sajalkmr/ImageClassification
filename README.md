@@ -1,7 +1,7 @@
 
 
 <h1>Image Classifier</h1>
-<p>This project provides a script to train a convolutional neural network (CNN) on a dataset of images. The script is written in Python and uses TensorFlow and OpenCV. The model can classify images into two different classes based on the dataset provided.</p>
+<p>This project provides a script to train a convolutional neural network (CNN) on a dataset of images. The script is written in Python and uses TensorFlow and OpenCV. The model can classify images into different classes based on the dataset provided.</p>
 
 <h2>Requirements</h2>
 <ul>
@@ -22,7 +22,7 @@
   <li>Make sure that the kernel for the notebook is set to Python 3.</li>
   <li>Run the cells in the notebook to train the model on your dataset.</li>
   <li>The script will create a unique folder with the current date and time in the format dd.mm.yyyy hhmmss-train_results for storing the model files and training results.</li>
-  <li>To use this script, you will need to place your dataset of images in a directory called 'training_data'. The script expects the images to be organized into two different subfolders within the 'training_data' directory, one for each class. For example, if you have two classes, "class1" and "class2", you should create two subfolders within the 'training_data' directory named "class1" and "class2" and place the corresponding images in each folder. Make sure that the images are in jpeg, jpg, bmp, or png format.</li>
+  <li>To use this script, you will need to place your dataset of images in a directory called 'training_data'. The script expects the images to be organized into different subfolders within the 'training_data' directory, one for each class. For example, if you have two classes, "class1" and "class2", you should create two subfolders within the 'training_data' directory named "class1" and "class2" and place the corresponding images in each folder. Make sure that the images are in jpeg, jpg, bmp, or png format.</li>
   <br>
   </ol>
   <h2>Example file structure:</h2>
@@ -108,4 +108,4 @@ training_data/
 
 <h2>Examples</h2>
 <p>You can find an example of a pre-trained model in the model folder, which was trained to classify images as notes and non-notes from WhatsApp images. You can use this pre-trained model as a starting point for fine-tuning on your own dataset or as a reference for comparison to your own model's performance. The model is trained using two classes (notes and non-notes) and the code is available in this repository <a href="https://github.com/sajalkmr/WhatsAppNotesSeparator">WhatsAppNotesSeparator</a>.</p>
-<p>Please make sure to place your images in two different folders as class1 and class2 in the training_data folder to be used for training.</p>
+
