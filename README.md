@@ -107,5 +107,5 @@ training_data/
 
 
 <h2>Examples</h2>
-<p>You can find an example of a pre-trained model in the model folder, which was trained to classify images as notes and non-notes from WhatsApp images. You can use this pre-trained model as a starting point for fine-tuning on your own dataset or as a reference for comparison to your own model's performance. The model is trained using two classes (notes and non-notes) and the code is available in this repository <a href="https://github.com/sajalkmr/WhatsAppNotesSeparator">WhatsAppNotesSeparator</a>.</p>
+<p>You can find an example of a pre-trained model in the model folder, which was trained to classify images as notes and non-notes from WhatsApp images. You can use this pre-trained model as a starting point for fine-tuning on your own dataset or as a reference for comparison to your own model's performance. The model is trained using two classes (notes and non-notes) and is available in this repository <a href="https://github.com/sajalkmr/NotesSeparator">NotesSeparator</a>.</p>
 
